@@ -28,8 +28,6 @@
     
     NSString *timeSinceText;
     
-    DebugLog(@"===========Time since now: %i seconds %i minutes %i hours %i days %i months",seconds,minutes,hours,days,months);
-    
     if ( months == 1)
     {
         timeSinceText = [[NSString alloc] initWithFormat:@"%i m", months];
