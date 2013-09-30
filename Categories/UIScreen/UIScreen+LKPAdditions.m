@@ -74,4 +74,24 @@
     return [[UIScreen mainScreen] bounds].size.height * [UIScreen mainScreen].scale;
 }
 
+/**
+ * @return YES if the device/screen has a retina display.
+ */
++ (BOOL)iSRetina
+{
+    BOOL isRetina = NO;
+    
+    if ([UIScreen instancesRespondToSelector:@selector(scale)])
+    {
+        CGFloat scale = [[UIScreen mainScreen] scale];
+        
+        if (scale > 1.0)
+        {
+            isRetina = YES;
+        }
+    }
+    
+    return isRetina;    
+}
+
 @end

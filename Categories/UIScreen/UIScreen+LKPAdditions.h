@@ -20,4 +20,6 @@
 +(CGFloat) screenWidthInPointsPortrait;
 +(CGFloat) screenWidthInPointsLandscape;
 
++ (BOOL)iSRetina;
+
 @end
